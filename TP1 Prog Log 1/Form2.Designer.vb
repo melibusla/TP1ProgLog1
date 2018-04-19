@@ -162,7 +162,7 @@ Partial Class frmPoliza
         Me.Controls.Add(Me.lblNombre)
         Me.Name = "frmPoliza"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Póliza"
+        Me.Text = "Póliza - Todavia no funciono bien"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

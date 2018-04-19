@@ -48,8 +48,7 @@ Partial Class Form1
         Me.btnNueva = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.numCuotas = New System.Windows.Forms.NumericUpDown()
-        Me.lblControl = New System.Windows.Forms.Label()
-        Me.lblCuota = New System.Windows.Forms.Label()
+        Me.btnGenerar2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.gBServicios.SuspendLayout()
@@ -59,6 +58,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Control
         Me.Label1.Location = New System.Drawing.Point(32, 26)
@@ -70,6 +70,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Control
         Me.Label2.Location = New System.Drawing.Point(38, 93)
@@ -81,6 +82,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.Control
         Me.Label3.Location = New System.Drawing.Point(38, 142)
@@ -105,6 +107,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.optImportado)
         Me.GroupBox1.Controls.Add(Me.optNacional)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -119,13 +122,14 @@ Partial Class Form1
         'optImportado
         '
         Me.optImportado.AutoSize = True
+        Me.optImportado.BackColor = System.Drawing.Color.Transparent
         Me.optImportado.Location = New System.Drawing.Point(22, 61)
         Me.optImportado.Name = "optImportado"
         Me.optImportado.Size = New System.Drawing.Size(87, 20)
         Me.optImportado.TabIndex = 1
         Me.optImportado.TabStop = True
         Me.optImportado.Text = "Importado"
-        Me.optImportado.UseVisualStyleBackColor = True
+        Me.optImportado.UseVisualStyleBackColor = False
         '
         'optNacional
         '
@@ -140,6 +144,7 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.optRIParcial)
         Me.GroupBox2.Controls.Add(Me.optRITotal)
         Me.GroupBox2.Controls.Add(Me.optResCivil)
@@ -187,6 +192,7 @@ Partial Class Form1
         '
         'gBServicios
         '
+        Me.gBServicios.BackColor = System.Drawing.Color.Transparent
         Me.gBServicios.Controls.Add(Me.chkProvVSust)
         Me.gBServicios.Controls.Add(Me.chkCelular)
         Me.gBServicios.Controls.Add(Me.chkAsistMed)
@@ -242,6 +248,7 @@ Partial Class Form1
         '
         'lblLogo
         '
+        Me.lblLogo.BackColor = System.Drawing.Color.Transparent
         Me.lblLogo.Image = CType(resources.GetObject("lblLogo.Image"), System.Drawing.Image)
         Me.lblLogo.Location = New System.Drawing.Point(387, 11)
         Me.lblLogo.Name = "lblLogo"
@@ -251,6 +258,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.Control
         Me.Label4.Location = New System.Drawing.Point(35, 346)
@@ -269,9 +277,10 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label5.Location = New System.Drawing.Point(274, 348)
+        Me.Label5.Location = New System.Drawing.Point(268, 344)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(138, 18)
         Me.Label5.TabIndex = 12
@@ -279,43 +288,46 @@ Partial Class Form1
         '
         'btnGenerar
         '
-        Me.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGenerar.BackColor = System.Drawing.Color.Transparent
+        Me.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnGenerar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenerar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnGenerar.Location = New System.Drawing.Point(38, 400)
+        Me.btnGenerar.ForeColor = System.Drawing.Color.Transparent
+        Me.btnGenerar.Location = New System.Drawing.Point(38, 395)
         Me.btnGenerar.Name = "btnGenerar"
         Me.btnGenerar.Size = New System.Drawing.Size(122, 36)
         Me.btnGenerar.TabIndex = 14
         Me.btnGenerar.Text = "Generar Póliza"
-        Me.btnGenerar.UseVisualStyleBackColor = True
+        Me.btnGenerar.UseVisualStyleBackColor = False
         '
         'btnNueva
         '
-        Me.btnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNueva.BackColor = System.Drawing.Color.Transparent
+        Me.btnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNueva.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNueva.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnNueva.Location = New System.Drawing.Point(189, 400)
+        Me.btnNueva.Location = New System.Drawing.Point(193, 395)
         Me.btnNueva.Name = "btnNueva"
         Me.btnNueva.Size = New System.Drawing.Size(122, 36)
         Me.btnNueva.TabIndex = 15
         Me.btnNueva.Text = "Nueva Póliza"
-        Me.btnNueva.UseVisualStyleBackColor = True
+        Me.btnNueva.UseVisualStyleBackColor = False
         '
         'btnSalir
         '
-        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalir.BackColor = System.Drawing.Color.Transparent
+        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnSalir.Location = New System.Drawing.Point(339, 400)
+        Me.btnSalir.Location = New System.Drawing.Point(349, 395)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(122, 36)
         Me.btnSalir.TabIndex = 16
         Me.btnSalir.Text = "Salir del Programa"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'numCuotas
         '
-        Me.numCuotas.Location = New System.Drawing.Point(418, 346)
+        Me.numCuotas.Location = New System.Drawing.Point(429, 342)
         Me.numCuotas.Maximum = New Decimal(New Integer() {12, 0, 0, 0})
         Me.numCuotas.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.numCuotas.Name = "numCuotas"
@@ -323,36 +335,29 @@ Partial Class Form1
         Me.numCuotas.TabIndex = 17
         Me.numCuotas.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
-        'lblControl
+        'btnGenerar2
         '
-        Me.lblControl.AutoSize = True
-        Me.lblControl.BackColor = System.Drawing.Color.Honeydew
-        Me.lblControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblControl.Location = New System.Drawing.Point(120, 379)
-        Me.lblControl.Name = "lblControl"
-        Me.lblControl.Size = New System.Drawing.Size(57, 18)
-        Me.lblControl.TabIndex = 18
-        Me.lblControl.Text = "Control"
-        '
-        'lblCuota
-        '
-        Me.lblCuota.AutoSize = True
-        Me.lblCuota.BackColor = System.Drawing.Color.Azure
-        Me.lblCuota.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCuota.Location = New System.Drawing.Point(274, 379)
-        Me.lblCuota.Name = "lblCuota"
-        Me.lblCuota.Size = New System.Drawing.Size(43, 16)
-        Me.lblCuota.TabIndex = 19
-        Me.lblCuota.Text = "Cuota"
+        Me.btnGenerar2.BackColor = System.Drawing.Color.Transparent
+        Me.btnGenerar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnGenerar2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGenerar2.ForeColor = System.Drawing.Color.Transparent
+        Me.btnGenerar2.Location = New System.Drawing.Point(38, 458)
+        Me.btnGenerar2.Name = "btnGenerar2"
+        Me.btnGenerar2.Size = New System.Drawing.Size(122, 36)
+        Me.btnGenerar2.TabIndex = 24
+        Me.btnGenerar2.Text = "Imprimir Póliza 2.0"
+        Me.btnGenerar2.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SteelBlue
-        Me.ClientSize = New System.Drawing.Size(492, 482)
-        Me.Controls.Add(Me.lblCuota)
-        Me.Controls.Add(Me.lblControl)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(515, 530)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.btnGenerar2)
         Me.Controls.Add(Me.numCuotas)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnNueva)
@@ -410,7 +415,6 @@ Partial Class Form1
     Friend WithEvents btnNueva As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents numCuotas As System.Windows.Forms.NumericUpDown
-    Friend WithEvents lblControl As System.Windows.Forms.Label
-    Friend WithEvents lblCuota As System.Windows.Forms.Label
+    Friend WithEvents btnGenerar2 As System.Windows.Forms.Button
 
 End Class

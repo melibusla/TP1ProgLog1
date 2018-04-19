@@ -37,9 +37,10 @@
         txtAdicionales.Text = AuxMec + " " + AsistMed + " " + Celular + " " + ProvV
 
         lblValorV.Text = "Valor del Vehículo: " + Form1.txtValor.Text
-        lblCuotas.Text = "Cuotas: " + Form1.numCuotas.Value
-        txtTotal.Text = Form1.lblControl.Text
-        txtCuotas.Text = Form1.lblCuota.Text
+        'No funciona
+        'lblCuotas.Text = "Cuotas: " + Form1.numCuotas.Value
+        'txtTotal.Text = Form1.Prima
+        'txtCuotas.Text = Form1.Cuota
 
         'vbCrLf
     End Sub
